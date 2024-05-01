@@ -1,0 +1,127 @@
+/* Style for each element */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for body */
+body {
+  background-color: #36EEE0;
+  text-align: center;
+}
+
+/* style for h1 inside main */
+main>h1{
+  margin: 40px 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+/* Style for container */
+.container {
+  height: 70vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style of game inside container */
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+/* Style for box inside game */
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #36EEE0;
+  background-color: #F652A0;
+  /* #BCECE0 */
+  /* Text effect */
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #0fa, 0 0 82px #0fa,0 0 92px #0fa;
+	text-align: center;	 
+}
+
+/* Style for reset button */
+#reset-btn, #undo-btn, #dark-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  /* background-color: #191913;
+  color: #fff; */
+  border-radius: 1rem;
+  border: none;
+}
+
+/* style for new game button */
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  /* background-color: #191913;
+  color: #fff; */
+  border-radius: 1rem;
+  border: none;
+}
+
+/* Style for winning msg */
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+/* Style for winning msg container */
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 20rem;
+}
+.msg-container img{
+  height: 50vh;
+  width: 30vw;
+}
+
+/* Hide msg */
+.hide {
+  display: none;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .box {
+  background-color: #666;
+}
+
+.dark-mode #msg {
+  color: #fff;
+}
+.dark-mode .btn-warning{
+  background-color: #B1D4E0;
+}
